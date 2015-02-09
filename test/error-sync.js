@@ -12,6 +12,6 @@ tape('error', function(t) {
   
   q.start(function(err) {
     t.equal(err.message, 'something broke');
-    t.equal(q.length, 0);
+    t.equal(q.getLength(), 0);
   });
 });
