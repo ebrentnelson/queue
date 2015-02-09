@@ -124,6 +124,8 @@ Mozilla has docs on how these methods work [here](https://developer.mozilla.org/
 #### `q.reverse()`  
 #### `q.indexOf(searchElement[, fromIndex])`  
 #### `q.lastIndexOf(searchElement[, fromIndex])`  
+#### `q.getLength()`
+
 
 ## Properties
 #### `q.concurrency`
@@ -131,9 +133,6 @@ Max number of jobs the queue should process concurrently, defaults to `Infinity`
 
 #### `q.timeout`
 Milliseconds to wait for a job to execute its callback.
-
-#### `q.length`
-Jobs pending + jobs to process (readonly).
 
 ## Events
 
