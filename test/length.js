@@ -26,7 +26,7 @@ tape('getLength()', function(t) {
     setTimeout(function() {
       t.equal(q.getLength(), 1);
       cb();
-      t.equal(q.legetLength()ngth, 0);
+      t.equal(q.getLength(), 0);
     }, 200);
   });
 
