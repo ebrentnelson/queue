@@ -9,7 +9,7 @@ tape('error', function(t) {
   q.on('error', q.end.bind(q));
   q.on('end', function(err) {
     t.equal(err.message, 'something broke');
-    t.equal(q.length, 0);
+    t.equal(q.getLength(), 0);
   });
 
   q.push(function(cb) {
