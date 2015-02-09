@@ -36,9 +36,9 @@ for (var method in arrayMethods) (function(method) {
   };
 })(arrayMethods[method]);
 
-Object.defineProperty(Queue.prototype, 'length', { get: function() {
+Queue.prototype.getLength = function() {
   return this.pending + this.jobs.length;
-}});
+};
 
 Queue.prototype.start = function(cb) {
   if (cb) {
