@@ -12,7 +12,7 @@ tape('end', function(t) {
 
   q.push(function(cb) {
     setTimeout(function() {
-      t.equal(q.length, 2);
+      t.equal(q.getLength(), 2);
       q.end(new Error('fake error'));
       setTimeout(function() {
 
@@ -20,7 +20,7 @@ tape('end', function(t) {
         cb();
 
         // and we should still have one job left
-        t.equal(q.length, 1);
+        t.equal(q.getLength(), 1);
       }, 100);
     }, 100);
   });
@@ -30,7 +30,7 @@ tape('end', function(t) {
   });
 
   q.start(function(err) {
-    t.equal(q.length, 0);
+    t.equal(q.getLength(), 0);
     
     if (err) {
       q.push(function() {});
