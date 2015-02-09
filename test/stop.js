@@ -32,7 +32,7 @@ tape('stop', function(t) {
   
   // but stop the q before the first job has finished
   setTimeout(function() {
-    t.equal(q.length, 2);
+    t.equal(q.getLength(), 2);
     q.stop();
   }, 0);
 });
