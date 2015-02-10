@@ -11,7 +11,7 @@ Asynchronous function queue with adjustable concurrency.
 [![coverage](https://img.shields.io/coveralls/ebrentnelson/queue.svg?style=flat-square&branch=master)](https://coveralls.io/r/ebrentnelson/queue)
 
 ## What
-IE8 compatible version of Jesse Tane's queue library. The only change here is Queue.length is replaced with Queue.getLength() because IE8 doesn't support getters.
+IE8 compatible version of Jesse Tane's queue library. The only change here is Queue.length is replaced with Queue.getLength() because IE8 does not support getters.
 
 ## Why
 [Async](https://github.com/caolan/async) is a big library offering various approaches to dealing with asynchrony; `queue` is a small library offering a single, flexible abstraction.
